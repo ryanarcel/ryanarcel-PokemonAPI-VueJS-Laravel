@@ -22,7 +22,7 @@ The application, built on PHP Laravel and the front-end framework of Vue, is an 
     <li>Clone this repo: https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel.git</li>
     <li>Run <b>composer install</b> to setup Laravel dependecies.</li>
     <li>Run <b>npm install</b> to setup Vue and other Node packages.</li>
-    <li>Import database provided in the SQL folder. Database name is <b>laravel-vue</b>.</li>
+    <li>Import database provided in the SQL folder. Database name is <b>laravel-vue</b>. Update the <b>.env</b> file.</li>
     <li>
         Some pseudo user accounts for the application:
         <ul>
@@ -38,15 +38,11 @@ The application, built on PHP Laravel and the front-end framework of Vue, is an 
 <div style='display:flex'>
     <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/dashboard.png?raw=true" style='width:60%;height:60%; display:flex; margin:10px'>
     <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/liked.png?raw=true" style='width:60%;height:60%; margin:10px'>
-</div>
    <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/likedmodal.png?raw=true" style='width:60%;height:60%; margin:10px'>
       <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/hated.png?raw=true" style='width:60%;height:60%; margin:10px'>
          <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/hatedmodal.png?raw=true" style='width:60%;height:60%; margin:10px'>
             <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/otherusers.png?raw=true" style='width:60%;height:60%; margin:10px'>
-</div>
-</div>
-</div>
-</div>
+</div
 
 <span style='font-style: italic'><b>Tags:</b> Vue JS, Laravel, Boostrap 5, Full Stack Development, Pokemon API</span>
 
