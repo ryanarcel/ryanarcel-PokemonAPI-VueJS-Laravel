@@ -1,7 +1,8 @@
 This project is a Pokemon Application based on the API provided by https://pokeapi.co/.
 
 <h3>Overview</h3>
-The application, built on PHP Laravel and the front-end framework of Vue, is an attempt to suffice the specifications indicated as follows: 
+This application, built on PHP Laravel and the front-end framework of Vue, is an attempt to suffice the specifications indicated as follows: 
+<br/>
 <ul>
     <li>Make a web app using Laravel + Vue with the following requirements:- User Authentication and Sign-up</li>
     <li>Once the user is logged in, they will see all the available pokemon from https://pokeapi.co/ API</li>
@@ -39,6 +40,15 @@ The application, built on PHP Laravel and the front-end framework of Vue, is an 
     </li>
 </ul>
 
+<h3>Versions:</h3>
+<ul>
+    <li>Vue 3</li>
+    <li>Axios 0.25</li>
+    <li>php 8</li>
+    <li>Laravel 9</li>
+    <li>Boostrap 5</li>
+</ul>
+
 <h3>Screenshots:</h3>
 <div style='display:flex'>
     <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/dashboard.png?raw=true" style='width:60%;height:60%; display:flex; margin:10px'>
@@ -48,6 +58,8 @@ The application, built on PHP Laravel and the front-end framework of Vue, is an 
          <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/hatedmodal.png?raw=true" style='width:60%;height:60%; margin:10px'>
             <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/otherusers.png?raw=true" style='width:60%;height:60%; margin:10px'>
 </div>
+
+
 
 <b>Tags:</b> Vue JS, Laravel, Boostrap 5, Full Stack Development, Pokemon AP
 
