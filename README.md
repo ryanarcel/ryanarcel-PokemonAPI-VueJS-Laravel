@@ -25,7 +25,7 @@ This application, built on PHP Laravel and the front-end framework of Vue, is an
     <li>Run <b>npm install</b> to install Vue and other Node packages.</li>
     <li>
         <b>Database Setup:</b><br/>
-        <b>Option 1</b>: Import database provided in the SQL folder. Create your <b>.env</b> file. Database name is <b>laravel-vue</b>. 
+        <b>Option 1</b>: Import database provided in the SQL folder. Create your <b>.env</b> file. The database name is <b>laravel-vue</b>. 
         <br/><b>or</b><br/>
         <b>Option 2</b>: Create <b>.env</b> file and use your preferred database name. Run <b>php artisan migrate</b>.
     </li>
