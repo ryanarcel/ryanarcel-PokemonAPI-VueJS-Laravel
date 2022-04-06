@@ -15,7 +15,7 @@
           <button
             class="btn btn-primary detailsButton"
             data-bs-toggle="modal"
-            :data-bs-target="`#detailsModal-${this.pokemon.id}`"
+            :data-bs-target="`#detailsModal-${this.thisPokemon.id }`"
           >
             More Details
           </button>
@@ -34,7 +34,7 @@
           </div>
 
           <DetailsModal
-            :id="`detailsModal-${this.pokemon.id}`"
+            :id="`detailsModal-${this.thisPokemon.id }`"
             :name="pokemon.name"
             :height="this.thisPokemon.height"
             :weight="this.thisPokemon.weight"
@@ -60,7 +60,7 @@ export default {
       user_id: 0,
 
       thisPokemon:{
-        id: null,
+        id: 0,
         name: "",
         imageLink: "",
         height: "",
@@ -88,6 +88,7 @@ export default {
       .then(result => {
           const data = result.data;
           this.setData(data);
+          console.log("poke id: ",data.id)
 
       }).catch((err) => {
         console.log("Error ",err);
@@ -175,7 +176,7 @@ export default {
   mounted() {
     this.fetchIndivData();
     this.user_id = sessionStorage.getItem("user_id");
-
+    console.log("pokemon id", this.pokemon.id)
   },
 };
 </script>
