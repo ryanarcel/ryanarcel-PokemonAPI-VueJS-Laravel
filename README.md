@@ -40,11 +40,11 @@ This application, built on PHP Laravel and the front-end framework of Vue, is an
     </li>
 </ul>
 
-<h3>Versions:</h3>
+<h3>Necessary Versions:</h3>
 <ul>
     <li>Vue 3</li>
     <li>Axios 0.25</li>
-    <li>php 8</li>
+    <li>PHP 8</li>
     <li>Laravel 9</li>
     <li>Boostrap 5</li>
 </ul>
