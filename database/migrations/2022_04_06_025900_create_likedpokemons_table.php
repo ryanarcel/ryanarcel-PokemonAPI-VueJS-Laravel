@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('items', function (Blueprint $table) {
+        Schema::create('likedpokemons', function (Blueprint $table) {
             $table->id();
+            $table->integer('pokemon_id');
             $table->string('name');
-            $table->boolean('completed')->default(false);
-            $table->timestamp('completed_at')->nullable();
+            $table->integer('user_id');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('items');
+        Schema::dropIfExists('likedpokemons');
     }
 };

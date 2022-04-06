@@ -36374,7 +36374,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     return {
       user_id: 0,
       thisPokemon: {
-        id: null,
+        id: 0,
         name: "",
         imageLink: "",
         height: "",
@@ -36399,6 +36399,8 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
         var data = result.data;
 
         _this.setData(data);
+
+        console.log("poke id: ", data.id);
       })["catch"](function (err) {
         console.log("Error ", err);
       });
@@ -36472,6 +36474,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   mounted: function mounted() {
     this.fetchIndivData();
     this.user_id = sessionStorage.getItem("user_id");
+    console.log("pokemon id", this.pokemon.id);
   }
 });
 
@@ -37808,7 +37811,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     "class": "btn btn-primary detailsButton",
     "data-bs-toggle": "modal",
-    "data-bs-target": "#detailsModal-".concat(this.pokemon.id)
+    "data-bs-target": "#detailsModal-".concat(this.thisPokemon.id)
   }, " More Details ", 8
   /* PROPS */
   , _hoisted_8), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
@@ -37824,7 +37827,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, null, 8
   /* PROPS */
   , ["onClick"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_DetailsModal, {
-    id: "detailsModal-".concat(this.pokemon.id),
+    id: "detailsModal-".concat(this.thisPokemon.id),
     name: $props.pokemon.name,
     height: this.thisPokemon.height,
     weight: this.thisPokemon.weight,

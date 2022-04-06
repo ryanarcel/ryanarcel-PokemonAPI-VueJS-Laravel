@@ -2,6 +2,7 @@
   <div class="account-view">
     <div class="container">
       <h4>Welcome, {{this.loggedInEmail}}!</h4>
+      <p class="text-primary">Double-click form to register and/or update information.</p>
       <div class="row shadow-lg">
         <div class="col rounded-start form-side">
           <h5 class="heading text-white">User Information</h5>
@@ -144,7 +145,7 @@ export default {
           console.log("Create Result: ", result);
           alert("Information created");
           this.editable = false
-          location.reload();
+
 
       }).catch(err => {
         console.log(err)
