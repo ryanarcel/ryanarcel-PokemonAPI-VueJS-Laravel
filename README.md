@@ -20,8 +20,8 @@ The application, built on PHP Laravel and the front-end framework of Vue, is an 
  
 <ul>
     <li>Clone this repo: https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel.git</li>
-    <li>Run <b>composer install</b> to download Laravel dependecies.</li>
-    <li>Run <b>npm install</b> to download Vue and other Node packages.</li>
+    <li>Run <b>composer install</b> to install Laravel dependecies.</li>
+    <li>Run <b>npm install</b> to install Vue and other Node packages.</li>
     <li>Import database provided in the SQL folder. Database name is <b>laravel-vue</b>. Update the <b>.env</b> file.</li>
     <li>Run <b>php artisan serve</b> to start the Laravel backend, and <b>npm run dev</b> for Vue</li>
     <li>
