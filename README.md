@@ -1,4 +1,4 @@
-This prpject is a Pokemon Application based on the API provided by https://pokeapi.co/.
+This project is a Pokemon Application based on the API provided by https://pokeapi.co/.
 
 <h3>Overview</h3>
 The application, built on PHP Laravel and the front-end framework of Vue, is an attempt to suffice the specifications indicated as follows: 
@@ -22,10 +22,15 @@ The application, built on PHP Laravel and the front-end framework of Vue, is an 
     <li>Clone this repo: https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel.git</li>
     <li>Run <b>composer install</b> to install Laravel dependecies.</li>
     <li>Run <b>npm install</b> to install Vue and other Node packages.</li>
-    <li>Import database provided in the SQL folder. Database name is <b>laravel-vue</b>. Update the <b>.env</b> file.</li>
+    <li>
+        <b>Database Setup:</b><br/>
+        <b>Option 1</b>: Import database provided in the SQL folder. Create your <b>.env</b> file. Database name is <b>laravel-vue</b>. 
+        <br/><b>or</b><br/>
+        <b>Option 2</b>: Create <b>.env</b> file and use your preferred database name. Run <b>php artisan migrate</b>.
+    </li>
     <li>Run <b>php artisan serve</b> to start the Laravel backend, and <b>npm run dev</b> for Vue</li>
     <li>
-        Some pseudo user accounts for the application:
+        If you chose option 1 on the database setup, these are some pseudo user accounts for the application:
         <ul>
             <li>Email: <b>ryanargee2@gmail.com</b> , Password: <b>test123</b></li>
             <li>Email: <b>ivy@rose.com</b> , Password: <b>test123</b></li>
@@ -42,9 +47,9 @@ The application, built on PHP Laravel and the front-end framework of Vue, is an 
       <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/hated.png?raw=true" style='width:60%;height:60%; margin:10px'>
          <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/hatedmodal.png?raw=true" style='width:60%;height:60%; margin:10px'>
             <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/otherusers.png?raw=true" style='width:60%;height:60%; margin:10px'>
-</div
+</div>
 
-<span style='font-style: italic'><b>Tags:</b> Vue JS, Laravel, Boostrap 5, Full Stack Development, Pokemon API</span>
+<b>Tags:</b> Vue JS, Laravel, Boostrap 5, Full Stack Development, Pokemon AP
 
 <h4>Developed by: <b>Ryan Arcel Galendez, MIT</b></h4>
  
