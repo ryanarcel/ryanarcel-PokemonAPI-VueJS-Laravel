@@ -118,9 +118,8 @@ export default {
           pokemon: this.newPokemon,
         })
         .then((response) => {
-          if (response.status == 201) {
-            alert("You liked " + this.pokemon.name);
-            console.log("Response: ", response);
+          if (response.status == 200) {
+            alert( response.data);
           }
         })
         .catch((error) => {
@@ -139,9 +138,8 @@ export default {
           pokemon: this.newPokemon,
         })
         .then((response) => {
-          if (response.status == 201) {
-            alert("You hated " + this.pokemon.name);
-            console.log("Response: ", response);
+          if (response.status == 200) {
+            alert(response.data);
           }
         })
         .catch((error) => {

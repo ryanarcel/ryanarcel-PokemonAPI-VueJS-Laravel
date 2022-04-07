@@ -9,28 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 class PokemonController extends Controller
 {
-    /*public function index($user_id){
-        $array = [];
 
-        if($likedPokemons = LikedPokemon::findOrFail($user_id)->get()){
-            array_push($array, $likedPokemons);
-        }
-        else{
-            return [];
-        }
-        $hatedPokemons = HatedPokemon::findOrFail($user_id)->get();
-
-        if(!$likedPokemons){
-            array_push($array, [], $hatedPokemons);
-        }
-        if(!$hatedPokemons){
-            array_push($array, $likedPokemons,[]);
-        }
-        if($likedPokemons && $hatedPokemons){
-            array_push($array, $likedPokemons, $hatedPokemons);
-        }
-        return $array;
-    }*/
 
     public function fetchLikedPokemons($user_id){
         return $pokemons = LikedPokemon::where('user_id', $user_id)->get();
@@ -45,9 +24,15 @@ class PokemonController extends Controller
         $likedPokemon = LikedPokemon::where([["user_id",  $user_id], ["pokemon_id", $poke_id]])->get();
         $hatedPokemon = HatedPokemon::where([["user_id",  $user_id], ["pokemon_id", $poke_id]])->get();
 
+        $likedPokemons = LikedPokemon::where("user_id", $user_id)->get();
+        $numberOfLiked = $likedPokemons->count();
+
         if($likedPokemon->count() > 0 ){
             return "Pokemon already liked.";
             //return $likedPokemon->count();
+        }
+        else if($numberOfLiked > 2){
+            return "Cannot like more than 3 pokemons.";
         }
         else{
             $pokemon= new LikedPokemon();
@@ -62,7 +47,8 @@ class PokemonController extends Controller
                 $hatedPokemon->first()->delete();
             }
 
-            return $pokemon;
+            return "You liked ".$request->pokemon["name"];
+           //return $numberOfLiked;
         }
 
     }
@@ -72,9 +58,15 @@ class PokemonController extends Controller
         $likedPokemon = LikedPokemon::where([["user_id",  $user_id], ["pokemon_id", $poke_id]])->get();
         $hatedPokemon = HatedPokemon::where([["user_id",  $user_id], ["pokemon_id", $poke_id]])->get();
 
+        $hatedPokemons = HatedPokemon::where("user_id", $user_id)->get();
+        $numberOfHated = $hatedPokemons->count();
+
         if($hatedPokemon->count() > 0 ){
             return "Pokemon already hated.";
             //return $likedPokemon->count();
+        }
+        else if($numberOfHated > 2){
+            return "Cannot hate more than 3 pokemons.";
         }
         else{
             $pokemon= new HatedPokemon();
@@ -89,7 +81,7 @@ class PokemonController extends Controller
                 $likedPokemon->first()->delete();
             }
 
-            return $pokemon;
+            return "You hated ".$request->pokemon["name"];
         }
     }
 
