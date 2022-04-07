@@ -50,18 +50,16 @@ This application, built on PHP Laravel and the front-end framework of Vue, is an
 </ul>
 
 <h3>Screenshots:</h3>
-<div style='display:flex'>
-    <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/dashboard.png?raw=true" style='width:60%;height:60%; display:flex; margin:10px'>
-    <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/liked.png?raw=true" style='width:60%;height:60%; margin:10px'>
-   <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/likedmodal.png?raw=true" style='width:60%;height:60%; margin:10px'>
-      <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/hated.png?raw=true" style='width:60%;height:60%; margin:10px'>
-         <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/hatedmodal.png?raw=true" style='width:60%;height:60%; margin:10px'>
-            <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/otherusers.png?raw=true" style='width:60%;height:60%; margin:10px'>
+<div'>
+    <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/dashboard.png?raw=true" style='width:60%;height:60%; display:flex; margin-bottom:20px'>
+    <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/liked.png?raw=true" style='width:60%;height:60%; margin-bottom:20px'>
+   <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/likedmodal.png?raw=true" style='width:60%;height:60%; margin-bottom:20px'>
+    <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/hated.png?raw=true" style='width:60%;height:60%; margin-bottom:20px'>
+    <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/hatedmodal.png?raw=true" style='width:60%;height:60%; margin-bottom:20px'>
+    <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/otherusers.png?raw=true" style='width:60%;height:60%; margin-bottom:20px'>
 </div>
 
-
-
-<b>Tags:</b> Vue JS, Laravel, Boostrap 5, Full Stack Development, Pokemon AP
+<b>Tags:</b> Vue JS, Laravel, Boostrap 5, Full Stack Development, Pokemon API
 
 <h4>Developed by: <b>Ryan Arcel Galendez, MIT</b></h4>
  
