@@ -59,7 +59,7 @@ This application, built on PHP Laravel and the front-end framework of Vue, is an
     <img src="https://github.com/ryanarcel/ryanarcel-PokemonAPI-VueJS-Laravel/blob/main/public/image/otherusers.png?raw=true" style='width:60%;height:60%; margin-bottom:20px'>
 </div>
 
-<b>Tags:</b> Vue JS, Laravel, Boostrap 5, Full Stack Development, Pokemon API
+<b>Tags:</b> Vue JS, Laravel, Boostrap 5, Full-Stack Development, Pokemon API
 
 <h4>Developed by: <b>Ryan Arcel Galendez, MIT</b></h4>
  
