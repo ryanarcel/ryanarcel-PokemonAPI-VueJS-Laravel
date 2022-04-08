@@ -1,7 +1,7 @@
 This project is a Pokemon Application based on the API provided by https://pokeapi.co/.
 
 <h3>Overview</h3>
-This application, built on PHP Laravel and the front-end framework of Vue, is an attempt to suffice the specifications indicated as follows: 
+This application, built primary on Vue JS with a back-end of PHP Laravel, is an attempt to suffice the specifications indicated as follows: 
 <br/>
 <ul>
     <li>Make a web app using Laravel + Vue with the following requirements:- User Authentication and Sign-up</li>
